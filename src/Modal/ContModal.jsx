@@ -7,11 +7,11 @@ export default function ContModal({ cerrar }) {
   const [lugar, setLugar] = useState(false);
   const [numero, setNumero] = useState(false);
 
-  const { location, setLocation, cantidad, setCantidad, setFiltro } =
+  const { location, setLocation, cantidad, setCantidad, setFiltros } =
     UseSearch();
 
   const handleSearch = () => {
-    setFiltro((prev) => !prev);
+    setFiltros((prev) => !prev);
     cerrar();
   };
 
